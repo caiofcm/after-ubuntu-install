@@ -77,6 +77,9 @@ bash install_latest_anaconda.sh
 ## Java
 sudo apt-get install openjdk-8-jdk
 
+## Node
+sudo apt install nodejs npm
+
 ## Softwares/Utilities
 
 ### Parcellite
@@ -90,6 +93,8 @@ if [ ! -f 'teamviewer_amd64.deb' ]; then
     wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
     sudo apt install ./teamviewer_amd64.deb
 fi
+
+sudo apt install inkscape
 
 # Network
 sudo apt install gufw
