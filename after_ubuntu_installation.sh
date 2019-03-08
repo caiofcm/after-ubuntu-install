@@ -17,7 +17,10 @@ sudo apt install curl git vim xclip
 
 ## Chrome
 sudo apt install libxss1 libappindicator1 libindicator7
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+if [ ! -f 'google-chrome-stable_current_amd64.deb' ]; then
+    echo " Downloading Chrome "
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+fi
 sudo apt install ./google-chrome*.deb
 
 ## Nemo
@@ -47,7 +50,7 @@ sudo apt install gir1.2-clutter-1.0 gir1.2-clutter-gst-3.0 gir1.2-gtkclutter-1.0
 sudo apt install nvidia-smi
 
 ## Generate ssh key
-if [ ! -f '~/.ssh/id_rsa.pub' ]; then
+if [ ! -f "$HOME"/.ssh/id_rsa.pub ]; then
     ssh-keygen -t rsa -b 4096 -C "caiocuritiba@gmail.com"
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa
@@ -74,10 +77,19 @@ bash install_latest_anaconda.sh
 ## Java
 sudo apt-get install openjdk-8-jdk
 
-## Helpers
+## Softwares/Utilities
+
+### Parcellite
 sudo add-apt-repository ppa:rickyrockrat/parcellite-appindicator
 sudo apt-get update; sudo apt-get install parcellite
 # Remember: CTRL+Alt+P -> Preferences -> Hot keys -> Histyory key combinations -> change H to V
+
+### Teamviewer
+if [ ! -f 'teamviewer_amd64.deb' ]; then
+    echo " Downloading and Installing Teamviewer "
+    wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+    sudo apt install ./teamviewer_amd64.deb
+fi
 
 # Network
 sudo apt install gufw
@@ -110,3 +122,4 @@ fi
 #' - https://extensions.gnome.org/extension/750/openweather/
 #' - https://extensions.gnome.org/extension/120/system-monitor/
 
+echo "Done!"
