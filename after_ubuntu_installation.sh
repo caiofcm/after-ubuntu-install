@@ -101,7 +101,9 @@ sudo apt install gufw
 sudo ufw enable
 
 ## Tplink driver
-sudo apt install rtl8812au-dkms
+#sudo apt install rtl8812au-dkms
+# This one worked for me: 
+#http://archive.ubuntu.com/ubuntu/pool/universe/r/rtl8812au/rtl8812au-dkms_4.3.8.12175.20140902+dfsg-0ubuntu8_all.deb
 
 # Configurations
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
