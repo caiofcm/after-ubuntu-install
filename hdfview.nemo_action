@@ -1,0 +1,7 @@
+[Nemo Action]
+Name=Open with HdfView
+Comment=Open with HdfView
+Quote=double
+Exec=enter-hdfview-abs-path-here
+Selection=Single
+Extensions=h5;
