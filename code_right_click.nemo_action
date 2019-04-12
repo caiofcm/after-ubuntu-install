@@ -1,0 +1,7 @@
+[Nemo Action]
+Name=Open in VS Code
+Comment=Open Folder in VS Code
+Quote=double
+Exec=code %P
+Selection = any
+Extensions=dir;
