@@ -104,6 +104,8 @@ sudo ufw enable
 #sudo apt install rtl8812au-dkms
 # This one worked for me: 
 #http://archive.ubuntu.com/ubuntu/pool/universe/r/rtl8812au/rtl8812au-dkms_4.3.8.12175.20140902+dfsg-0ubuntu8_all.deb
+# After stopped working I installed this one and things were fixed, so next time just
+# sudo dpkg -i rtl8812au*.deb in the ~/Downloads folder
 
 # Configurations
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
