@@ -78,7 +78,7 @@ bash install_latest_anaconda.sh
 sudo apt-get install openjdk-8-jdk
 
 ## Node
-sudo apt install nodejs npm
+sudo apt-get install nodejs-dev node-gyp libssl1.0-dev npm
 
 ## Softwares/Utilities
 
