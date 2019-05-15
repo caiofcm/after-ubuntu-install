@@ -36,6 +36,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sudo apt-get install fonts-powerline
 sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' .zshrc
 
+### For Properly working on VsCode intergraded terminal:
+# Ref: https://github.com/powerline/fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+## Add the following to vscode settings:
+# "terminal.integrated.fontFamily": "'Inconsolata-g for Powerline'",
+
 ## Timeshift (try it)
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get update
