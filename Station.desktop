@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Station
+Comment=Station
+Icon=/home/caio/Softwares/icons/Station_icon.png
+Exec=/home/caio/Softwares/Station-1.52.2-x86_64.AppImage
+Terminal=false
+Categories=Station;game
