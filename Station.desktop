@@ -1,3 +1,4 @@
+#COPY ME TO: ~/.local/share/applications
 [Desktop Entry]
 Type=Application
 Name=Station
