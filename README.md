@@ -12,4 +12,4 @@ rclone mount -v --buffer-size 32M --dir-cache-time 300h --poll-interval 5m caio-
 
 ### Currently used:
 
-rclone copy ./MainShared/ caio-onedrive:MainShared  -u -P -v && rclone copy  caio-onedrive:MainShared ./MainShared -u -P -v
+rclone copy ./MainShared/ caio-onedrive:MainShared  -u -P -v --exclude-from ./MainShared/exclude-rclone.txt && rclone copy  caio-onedrive:MainShared ./MainShared -u -P -v --exclude-from ./MainShared/exclude-rclone.txt
