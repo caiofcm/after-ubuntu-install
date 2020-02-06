@@ -9,3 +9,7 @@ Turned in a repo since it make it easer to update (instead of gist)
 ## Rclone Mount Command:
 
 rclone mount -v --buffer-size 32M --dir-cache-time 300h --poll-interval 5m caio-onedrive:MainShared/ ~/OneDrive
+
+### Currently used:
+
+rclone copy ./MainShared/ caio-onedrive:MainShared  -u -P -v && rclone copy  caio-onedrive:MainShared ./MainShared -u -P -v
