@@ -122,6 +122,12 @@ sudo ufw enable
 ## WORKED IN LINUX MINT
 # FOLLOW INSTRUCTIONS FROM: https://github.com/gnab/rtl8812au
 
+# KEYBOARD WORKING IN LINUX MINT
+# > US, intl. with dead keys
+# cedilla:
+# add compose key: https://forums.linuxmint.com/viewtopic.php?t=286923
+# instructions also here: https://askubuntu.com/questions/1008071/how-to-write-in-brazilian-portuguese-using-a-us-keyboard
+
 # Configurations
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.shell favorite-apps "['nemo.desktop', 'code.desktop', 'google-chrome.desktop']"
