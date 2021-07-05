@@ -119,6 +119,9 @@ sudo ufw enable
 # After stopped working I installed this one and things were fixed, so next time just
 # sudo dpkg -i rtl8812au*.deb in the ~/Downloads folder
 
+## WORKED IN LINUX MINT
+# FOLLOW INSTRUCTIONS FROM: https://github.com/gnab/rtl8812au
+
 # Configurations
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.shell favorite-apps "['nemo.desktop', 'code.desktop', 'google-chrome.desktop']"
